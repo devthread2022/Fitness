@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">Fitness</string>
     <string name="terms">By continuing, you agree to the Terms of Service.\nNote: The Fitness Privacy Policy describes how data\nis handled in this service. Fitness sends diagnostics\ndata to help improve the application.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fitness_can">Fitness can track walking, running and cycling in\nthe background. This means you will get\n
+    metrics like steps, distance and calories for all these\nactivities.</string>
+    <string name="to_do">To do this, the app needs permission to\nrecognise your activity. Over time Fitness also uses\n
+    this data to personalize your experience, and\nbetter recognize activity.</string>
+    <string name="this_info">This information lets Fitness estimates calories,\ndistance and the intensity of your activity. You will\n
+    also get coaching that is tailored to you.</string>
 </resources>
