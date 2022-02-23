@@ -3,7 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/SHRI/AndroidStudioProjects/Fitness/app/src/main/res/layout/activity_login.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/SHRI/AndroidStudioProjects/Fitness/app/src/main/res/drawable/box_back.xml" value="0.215625" />
+        <entry key="..\:/Users/SHRI/AndroidStudioProjects/Fitness/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/Users/SHRI/AndroidStudioProjects/Fitness/app/src/main/res/layout/activity_main.xml" value="0.19947916666666668" />
       </map>
     </option>

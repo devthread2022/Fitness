@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Fitness</string>
+    <string name="terms">By continuing, you agree to the Terms of Service.\nNote: The Fitness Privacy Policy describes how data\nis handled in this service. Fitness sends diagnostics\ndata to help improve the application.</string>
 </resources>
