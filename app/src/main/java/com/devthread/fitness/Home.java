@@ -8,16 +8,16 @@ import android.annotation.SuppressLint;
 import android.os.AsyncTask;
 import android.os.Bundle;
 
-import com.devthread.fitness.UI.About;
+import com.devthread.fitness.UI.Dashboard;
 
-public class IntroScreen extends AppCompatActivity {
+public class Home extends AppCompatActivity {
     final FragmentManager fm = getSupportFragmentManager();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_intro_screen);
-        Fragment fragment = new About();
+        setContentView(R.layout.activity_home);
+        Fragment fragment = new Dashboard();
         loadFragment(fragment);
     }
     @SuppressLint("StaticFieldLeak")
@@ -27,7 +27,7 @@ public class IntroScreen extends AppCompatActivity {
             protected Void doInBackground(Void... params) {
                 if (featureFragment!=null)
                 {
-                    fm.beginTransaction().replace(R.id.introContainer, featureFragment, "featureFragment").addToBackStack("featureFragment").commit();
+                    fm.beginTransaction().replace(R.id.homeContainer, featureFragment, "featureFragment").addToBackStack("featureFragment").commit();
                 }
                 return null;
             }

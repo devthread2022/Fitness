@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".UI.About"
     android:background="@color/white_bg"
     android:padding="10dp">
@@ -36,10 +37,24 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:layout_marginTop="10dp"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            app:civ_border_width="0dp"
+            app:civ_border_color="@color/white_bg"
+            android:src="@drawable/n"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="useremail@mail.com"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins"/>
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="3"
+            android:layout_weight="2"
             android:layout_marginTop="15dp">
             <TableRow
                 android:layout_width="match_parent"
@@ -47,35 +62,106 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="80dp"
-                    android:gravity="center"
                     android:layout_weight="1"
-                    android:layout_column="1">
-                    <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="70dp"
-                        android:src="@drawable/walk"/>
+                    android:layout_column="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_light"
+                        android:textSize="12sp"
+                        android:layout_marginStart="5dp"/>
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/box_back"
+                        android:layout_margin="5dp"
+                        android:spinnerMode="dialog"
+                        android:entries="@array/gender"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="80dp"
-                    android:gravity="center"
                     android:layout_weight="1"
-                    android:layout_column="2">
-                    <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="70dp"
-                        android:src="@drawable/running"/>
+                    android:layout_column="2"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Birthday"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_light"
+                        android:textSize="12sp"
+                        android:layout_marginStart="5dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/box_back"
+                        android:layout_margin="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Birthday"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/poppins"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </TableRow>
+
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_marginTop="15dp">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_column="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Weight"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_light"
+                        android:textSize="12sp"
+                        android:layout_marginStart="5dp"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/box_back"
+                        android:layout_margin="5dp"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="80dp"
-                    android:gravity="center"
                     android:layout_weight="1"
-                    android:layout_column="3">
-                    <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="70dp"
-                        android:src="@drawable/cycling"/>
+                    android:layout_column="2"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Height"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_light"
+                        android:textSize="12sp"
+                        android:layout_marginStart="5dp"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/box_back"
+                        android:layout_margin="5dp"/>
+
                 </LinearLayout>
             </TableRow>
 
@@ -87,6 +173,7 @@
         android:layout_height="60dp"
         android:layout_gravity="bottom">
         <LinearLayout
+            android:id="@+id/next"
             android:layout_width="100dp"
             android:layout_height="40dp"
             android:background="@drawable/btn_back"

@@ -9,4 +9,11 @@
     this data to personalize your experience, and\nbetter recognize activity.</string>
     <string name="this_info">This information lets Fitness estimates calories,\ndistance and the intensity of your activity. You will\n
     also get coaching that is tailored to you.</string>
+    <string name="american">Scoring 150 Heart Points a week can help you live longer, sleep better, and boost your mood.</string>
+    <array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Not to say</item>
+    </array>
+    <string name="yoga">Yoga improves strength, balance and flexibility. Slow movements and deep breathing increase blood flow and warm up muscles, while holding a pose can build strength.</string>
 </resources>

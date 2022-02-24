@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fitness">
         <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
             android:name=".IntroScreen"
             android:exported="false" />
         <activity
