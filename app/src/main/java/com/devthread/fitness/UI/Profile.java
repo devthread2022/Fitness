@@ -13,28 +13,24 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.devthread.fitness.R;
-import com.devthread.fitness.databinding.FragmentBrowseBinding;
+import com.devthread.fitness.databinding.FragmentProfileBinding;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class Browse extends Fragment {
-    private FragmentBrowseBinding binding;
+public class Profile extends Fragment {
+    private FragmentProfileBinding binding;
     ExecutorService executorService = Executors.newSingleThreadExecutor();
     Handler handler = new Handler(Looper.getMainLooper());
     public static Fragment activeFragment;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        binding = FragmentBrowseBinding.inflate(inflater,container,false);
+        binding = FragmentProfileBinding.inflate(inflater,container,false);
         View view = binding.getRoot();
-        binding.activity.setOnClickListener(view1 -> {
-            Fragment fragment = new Activity();
-            loadFragment(fragment,"Activity");
-        });
-        binding.measurement.setOnClickListener(view1 -> {
-            Fragment fragment = new Measurement();
-            loadFragment(fragment,"Measurement");
+        binding.settings.setOnClickListener(view1 -> {
+            Fragment fragment = new Settings();
+            loadFragment(fragment,"Settings");
         });
         return view;
     }

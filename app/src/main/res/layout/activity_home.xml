@@ -24,6 +24,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
                 <LinearLayout
+                    android:id="@+id/home"
                     android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:orientation="vertical"
@@ -44,6 +45,7 @@
                         android:layout_marginTop="2dp"/>
                 </LinearLayout>
                 <LinearLayout
+                    android:id="@+id/journal"
                     android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:orientation="vertical"
@@ -64,6 +66,7 @@
                         android:layout_marginTop="2dp"/>
                 </LinearLayout>
                 <LinearLayout
+                    android:id="@+id/browse"
                     android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:orientation="vertical"
@@ -84,6 +87,7 @@
                         android:layout_marginTop="2dp"/>
                 </LinearLayout>
                 <LinearLayout
+                    android:id="@+id/profile"
                     android:layout_width="0dp"
                     android:layout_height="50dp"
                     android:orientation="vertical"
